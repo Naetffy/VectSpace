@@ -1,56 +1,63 @@
 Quantum Calculator
-Este proyecto es una calculadora de numeros complejos, la cual permite operaciones como la suma, resta, multiplicacion, division, modulo, conjugado, conersion de cordenadas cartesianas a polares y hallar la fase de un numero.
+Este proyecto es una libreria de una calculadora de numeros complejos, la cual permite operaciones como la suma, resta, multiplicacion, division, modulo, conjugado, conersion de cordenadas cartesianas a polares y hallar la fase de un numero.
 
 Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Esta libreria esta desarrollada para la solucion de operaaciones entre complejos sin el uso de la funcion complex,
+para su uso se debe tener en cuenta:
 
-Prerequisites
-What things you need to install the software and how to install them
+Prerequesitos:
+Uno de los unicos requesitos para el uso de la libreria es tener instalado pyhton y configurado en la carpeta en la cual se quiere llamar a la libreria
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+Intalacion:
+Para la instalacion de esta libreria se puede proceder de dos maneras.
+    1.En la carpeta en la que se desea descargar la libreria hacer el uso de git y el comando git clone https://github.com/Naetffy/VectSpace.git de forma que se obtiene de manera directa la descarga completa de todos los archivos del repositorio, incluido asi la libreria.
+    2.En GitHub hacer la instalacion del repositorio descargandolo como un ZIP y extrayendo este en la carpeta en la cual se quiere hacer el uso de la libreria.
 
-Give the example
-And repeat
+Implemetacion:
+Para implementar la libreria en un proyecto se debe hacer el uso de la palabra import seguido de el nombre Complex,
+posteriormente se puede hacer el uso de cualquiera de las siguientes funciones:
+    1. Suma = Complex.sum() 
+    Como  parametro acepta 4 numeros (Parte real del numero 1, Parte imaginaria del numero 1, Parte real del numero 2, Parte imaginaria del numero 2)
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+    2. Resta = Complex.rest() 
+    Como  parametro acepta 4 numeros (Parte real del numero 1, Parte imaginaria del numero 1, Parte real del numero 2, Parte imaginaria del numero 2)
 
-Running the tests
-Explain how to run the automated tests for this system
+    3. Producto = Complex.pro() 
+    Como  parametro acepta 4 numeros (Parte real del numero 1, Parte imaginaria del numero 1, Parte real del numero 2, Parte imaginaria del numero 2)
 
-Break down into end to end tests
-Explain what these tests test and why
+    4. Divison = Complex.div() 
+    Como  parametro acepta 4 numeros (Parte real del numero 1, Parte imaginaria del numero 1, Parte real del numero 2, Parte imaginaria del numero 2)
 
-Give an example
-And coding style tests
-Explain what these tests test and why
+    5. Modulo = Complex.mod() 
+    Como parametro acepta 2 numeros (Parte real del numero complejo, Parte imaginaria del numero complejo)
 
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+    6. Conjugado = Complex.conj()
+    Como parametro acepta 2 numeros (Parte real del numero complejo, Parte imaginaria del numero complejo)
 
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+    7. Conversion de cartesianas a polares = Complex.ctop()
+    Como parametro acepta 2 numeros (Parte real del numero complejo, Parte imaginaria del numero complejo)
+    
+    8. Fase de un complejo = Complex.fase()
+    Como parametro acepta 2 numeros (Parte real del numero complejo, Parte imaginaria del numero complejo)
 
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+Ejemplo del codigo para el funcionamiento:
 
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
+import Complex
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+Resultado = Complex.sum(1,2,4,5)
+//Representa la suma entre (1+2i)+(4+5i)
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+print(Resultado)
+
+//El output sera 5+7i
+
+Fin codigo ejemplo
+
+Hecho con:
+Math - Libreria que nos permite hacer operaciones matematicas como la raiz cuadrada
+
+
+Realizado por:
+Mateo Sebastian Forero Fuentes
+
