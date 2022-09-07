@@ -11,12 +11,11 @@ Uno de los unicos requesitos para el uso de la libreria es tener instalado pyhto
 
 Intalacion:
 Para la instalacion de esta libreria se puede proceder de dos maneras.
-    1.En la carpeta en la que se desea descargar la libreria hacer el uso de git y el comando git clone https://github.com/Naetffy/VectSpace.git de forma que se obtiene de manera directa la descarga completa de todos los archivos del repositorio, incluido asi la libreria.
-    2.En GitHub hacer la instalacion del repositorio descargandolo como un ZIP y extrayendo este en la carpeta en la cual se quiere hacer el uso de la libreria.
+    1.En la carpeta en la que se desea descargar la libreria hacer el uso de git y el comando git clone https://github.com/Naetffy/VectSpace.git de forma que se obtiene de manera directa la descarga completa de todos los archivos del repositorio dentro de una carpeta llamada VectSpace, dentro de la cual esta la libreria.
+    2.En GitHub hacer la instalacion del repositorio descargandolo como un ZIP y extrayendo este en la carpeta en la cual se quiere hacer el uso de la libreria, esto nos creara una carpeta con el nombre "VectSpace-master", este lo cambiamos a "VectSpace".
 
 Implemetacion:
-Para implementar la libreria en un proyecto se debe hacer el uso de la palabra import seguido de el nombre Complex,
-posteriormente se puede hacer el uso de cualquiera de las siguientes funciones:
+Para implementar la libreria en un proyecto se debe hacer el uso de la siguiente sintaxis from VectSpace import Complex, posteriormente se puede hacer el uso de cualquiera de las siguientes funciones:
     1. Suma = Complex.sum() 
     Como  parametro acepta 4 numeros (Parte real del numero 1, Parte imaginaria del numero 1, Parte real del numero 2, Parte imaginaria del numero 2)
 
@@ -43,7 +42,7 @@ posteriormente se puede hacer el uso de cualquiera de las siguientes funciones:
 
 Ejemplo del codigo para el funcionamiento:
 
-import Complex
+from VectSpace import Complex
 
 Resultado = Complex.sum(1,2,4,5)
 //Representa la suma entre (1+2i)+(4+5i)
